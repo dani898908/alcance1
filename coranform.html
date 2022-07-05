@@ -75,7 +75,7 @@
 							<article id="cys">
 								<h2 class="major">Control y Seguimiento</h2>
 								<h3 class="major">1. Informacion general</h3>
-								<form method="post" action="#">
+								<div method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="tipo-tramite">Asunto:</label>
@@ -115,12 +115,7 @@
 											<label for="interesado">Acompañante:</label>
 											<input type="text" name="interesado" id="interesado" placeholder="" />
 										</div>
-										<br><br>
-										<br><br>
-										<br><br>
-										<div class="field half">
-											<label for="interesado"></label>
-											<input type="text" name="interesado" id="interesado" placeholder="" />
+										
 										</div>
 										<ul><br><h3 class="major">2. ANTECEDENTES</h3></ul>
 										<table class="t-antecedentes">
@@ -129,46 +124,30 @@
 											</div>
 											<thead>
 											<tr>
-												<th>Tipo 
-										Documento&nbsp;<br></th>
+												<th>Radicado resolución y/o Acto administrativo</th>
 												<th>Fecha&nbsp;</th>
-												<th>Radicado</th>
-												<th>Asunto</th>
-												<th>No. Páginas</th>
+												<th>Descriptor</th>
+												
 											</tr>	</thead>	<tbody>	<tr>
-												<td>COMUNICACIÓN
-										OFICIAL
-										EXTERNA</td>
+												<td>160AN-RES1911-6683</td>
 												<td>&nbsp; Feb.02/2021
 										</td>
-												<td>&nbsp;180-COE2102-
-										3904*SEGUROS DEL
-										ESTADO</td>
-												<td>&nbsp;POLIZA DE SEGURO DE CUMPLIMIENTO ENTIDAD
-										ESTATAL/CONTRATO 190-CNT2102-40</td>
-												<td>&nbsp;1</td>
+												<td>Por la cuál se decide sobre la aprobación de obras, trabajos o instalaciones</td>
+
 											</tr>
 											<tr>
-												<td>&nbsp;ACTO ADMINISTRATIVO</td>
+												<td>&nbsp;160AN-1603-6683</td>
 												<td>&nbsp;Mar.02/2021</td>
-												<td>&nbsp;130AS-ACTO ADMINISTRATIVO</td>
-												<td>&nbsp;TERRITORIAL HEVIXICOS/ACTO ADMINISTRATIVO NO. HX 01240 DE LA SOCIEDAD</td>
-												<td>&nbsp;1</td>
+												<td>&nbsp;Por la cual se otorga un permiso de ocupación del cauce</td>
+												
 											</tr>
 											<tr>
-												<td>&nbsp;&nbsp;ACTO ADMINISTRATIVO</td>
+												<td>&nbsp;&nbsp;160AN-1507-2743</td>
 												<td>&nbsp;Abr.02/2021</td>
-												<td>&nbsp;130ZF-493 ACTO ADMINISTATIVO</td>
-												<td>&nbsp;TERRITORIAL HEVIXICOS/ACTO ADMINISTRATIVO NO. HX 01282 DE LA SOCIEDAD&nbsp;</td>
-												<td>&nbsp;1</td>
+												<td>&nbsp;Por la cual se inicia un trámite</td>
+												
 											</tr>
-											<tr>
-												<td>&nbsp; &nbsp;RESOLUCIÓN</td>
-												<td>&nbsp;Jun.02/2021</td>
-												<td>&nbsp;130AN-280*REMISION RES EXPEDIENTE 4-98369</td>
-												<td>&nbsp;&nbsp;TERRITORIAL HEVIXICOS/ACTO ADMINISTRATIVO NO. HX 01281 DE LA SOCIEDAD</td>
-												<td>&nbsp;1</td>
-											</tr>
+										
 											</tbody>
 										</table>
 
@@ -330,16 +309,73 @@
 													<ul><br><br><h3 class="major">6. Análisis de documentación aportada </h3></ul>
 													<textarea name="demo-message" id="demo-message" placeholder="Digite el análisis de documentación aportada" rows="6"></textarea>
 													<div class="field half">
-														<ul><br><br><h3 class="major">7.Valoración de la Importancia de la afectación</h3>
-															<p > (este punto solo aplica en los casos en que se presente un incumplimiento reiterado frente a las obligaciones y condiciones del respectivo permiso ambiental, medianteacto administrativo) (Si aplica)</p> 
-															</ul>
-															<select name="tipo-tramite" id="cars">
-																<option value="t1">SI</option>
-																<option value="t2">NO</option>
-															</select>
-														<input type="text" id="desc" name="desc" value="" placeholder="Describa la afectación" >
+														<ul><br><br><h3 class="major">7. Identificación de afectación y/o problemática ambiental </h3>
+															<p > (este punto solo aplica en los casos en que se presente un incumplimiento reiterado frente a las obligaciones y condiciones del respectivo permiso ambiental, medianteacto administrativo) <a style="cursor:pointer;" onclick="myFunction()">Si</a></p> 
+													
+														</ul>
+														
+															
+														
+														<!-- <input type="text" id="desc" name="desc" value="" placeholder="Describa la afectación" > -->
 													</div>
-													<ul><br><br><h4 class="major">7.1. Determinación de la importancia de la afectación:  </h4></ul>
+
+													<div id="myDIV2" style="display: none; cursor: pointer;">
+																
+														<p ><a  onclick="myFunction2()">1. Afectaciona ambiental</a></p>
+														<p>2. Problemática ambiental</p> 
+														
+													</div>
+                                                    <div id="myDIV" style="display: none" >
+													<ul><br><br><h4 class="major">7.1. Categorización de la afectación y/o problemática ambiental  :  </h4></ul>
+													<h3>Categoria:</h3>
+													
+        
+														
+															<select  style="height: 120px; cursor: pointer;" id="framework" multiple>
+																<option value="
+																-Distribución del recurso hídrico
+																-Administración del recurso hídrico 
+																-Trámites ambientales
+																-Oferta y demanda
+																-Calidad del agua 
+																-Vertimiento
+																" id="btn">Problemas ambientales en relación al agua</option>
+																<option value="
+																-Contaminación atmosférica por fuentes fijas 
+																-Contaminación atmosférica por móviles
+																-Ruido
+																-Olores ofensivos
+																" id="btn1">Problemas y conflictos ambientales en relación al aire</option>
+																<option value="
+																-Deforestación
+																 -Interacciones humanos
+																  -fauna silvestre
+																-Cambio climático 
+																-Gestión del riesgo
+																-Residuos sólidos
+																-Expansión agrícola
+																-Expansión urbana
+																" id="btn2">Problemas y conflictos ambientales en relación a los bosques y suelos</option>
+																<option value="
+																-Minería
+																-Hidroeléctricas
+																-Hidrocarburos
+																-Infraestructura
+																-Agroindustria
+																" id="btn3">Problemas y conflictos ambientales en relación a macroproyectos. </option>
+															</select>
+															<!-- <button id="btn">Get Selected Frameworks</button> -->
+														
+													
+														<div style="cursor: pointer;" >
+															<h3 id="p1">Subcategoria:</h3>
+															
+														</div>
+														<div id="list">
+														 
+														</div>
+													</div>
+													<ul><br><br><h4 class="major">7.2.Valoración de la Importancia de la afectación :  </h4></ul>
 													<table class="tg">
 														<thead>
 														  <tr>
@@ -621,7 +657,7 @@
 										<input type="reset" value="Limpiar" />
 										
 									</ul>
-								</form>
+								</div>
 								
 							</article>
 						<!-- login -->
@@ -639,7 +675,121 @@
 
 		<!-- BG -->
 		
-
+		<script>
+       
+			const btn = document.querySelector('#btn');
+			const sb = document.querySelector('#framework');
+			btn.onclick = (e) => {
+				e.preventDefault();
+				var letters;
+			   var list = ['Distribución del recurso hídrico','Administración del recurso hídrico ','Trámites ambientales','Oferta y demanda', 'Calidad del agua ','Vertimiento']
+		  
+					for (var i = 0; i < list.length; i++) {
+				console.log( list[i] );
+				var tag= document.createElement("ol");
+				var ul = document.getElementById("list");
+				 var li = document.createElement("li");
+	
+		   li.appendChild(document.createTextNode(list[i]));
+		   ul.appendChild(li);
+				letters += "<li>"  + list[i] + "</li>";
+					var text=document.createTextNode(letters);
+					tag.appendChild(text);
+	
+				
+				}
+	
+			 
+			};
+			btn1.onclick = (e) => {
+				e.preventDefault();
+				/* const selectedValues = [].filter
+					.call(sb.options, option => option.selected)
+					.map(option => option.text);
+					var tag= document.createElement("p");
+				   
+					var text=document.createTextNode(sb.value);
+					tag.appendChild(text);
+			  
+				var element = document.getElementById("new");
+				element.appendChild(tag);
+				console.log("texto1") */
+				var letters;
+			   var list = ['Contaminación atmosférica por fuentes fijas ','Contaminación atmosférica por móviles ','Ruido', 'Olores ofensivos']
+		  
+					for (var i = 0; i < list.length; i++) {
+				console.log( list[i] );
+				var tag= document.createElement("ol");
+				var ul = document.getElementById("list");
+				 var li = document.createElement("li");
+	
+		   li.appendChild(document.createTextNode(list[i]));
+		   ul.appendChild(li);
+				letters += "<li>"  + list[i] + "</li>";
+					var text=document.createTextNode(letters);
+					tag.appendChild(text);
+	
+				
+				}
+			};
+			btn2.onclick = (e) => {
+				e.preventDefault();
+			   var letters;
+			   var list = ['Deforestación','Interacciones humanos ','fauna silvestre', 'Cambio climático','Gestión del riesgo','Residuos sólidos','Expansión agrícola','Expansión urbana']
+		  
+					for (var i = 0; i < list.length; i++) {
+				console.log( list[i] );
+				var tag= document.createElement("ol");
+				var ul = document.getElementById("list");
+				 var li = document.createElement("li");
+	
+					li.appendChild(document.createTextNode(list[i]));
+					ul.appendChild(li);
+							letters += "<li>"  + list[i] + "</li>";
+								var text=document.createTextNode(letters);
+								tag.appendChild(text);
+	
+				
+				}
+			};
+			btn3.onclick = (e) => {
+				e.preventDefault();
+				var letters;
+			   var list = ['Minería','Hidroeléctricas','Hidrocarburos', 'Infraestructura','Agroindustria']
+		  
+					for (var i = 0; i < list.length; i++) {
+				console.log( list[i] );
+				var tag= document.createElement("ol");
+				var ul = document.getElementById("list");
+				 var li = document.createElement("li");
+	
+					li.appendChild(document.createTextNode(list[i]));
+					ul.appendChild(li);
+							letters += "<li>"  + list[i] + "</li>";
+								var text=document.createTextNode(letters);
+								tag.appendChild(text);
+	
+				
+				}
+			};
+			function myFunction() {
+				var x = document.getElementById("myDIV2");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+	          }
+			  function myFunction2() {
+				var x = document.getElementById("myDIV");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}	
+				
+	          }
+		</script>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
