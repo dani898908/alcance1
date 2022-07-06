@@ -119,14 +119,12 @@
 										</div>
 										<ul><br><h3 class="major">2. ANTECEDENTES</h3></ul>
 										<table class="t-antecedentes">
-											<div class="field half">
-												<a href="#">Agregar <i class="fa fa-plus-circle" aria-hidden="true"></a></i>
-											</div>
+											
 											<thead>
 											<tr>
-												<th>Radicado resolución y/o Acto administrativo</th>
-												<th>Fecha&nbsp;</th>
-												<th>Descriptor</th>
+												<th><h4><center>Radicado resolución y/o Acto administrativo</center></h4></th>
+												<th><h4><center>Fecha</center></h4></th>
+												<th><h4><center>Descriptor</center></h4></th>
 												
 											</tr>	</thead>	<tbody>	<tr>
 												<td>160AN-RES1911-6683</td>
@@ -149,9 +147,16 @@
 											</tr>
 										
 											</tbody>
+											<div class="field half">
+												<a href="#"></a></i>
+											</div>
 										</table>
-
-										<ul><br><h3 class="major">3. Validación de coordenadas asociadas al trámite</h3></ul>
+										<br><br><br><br>
+										<div style="margin:-120px 0px 20px 2px;color: cornflowerblue;">
+											<a href="#">Agregar <i class="fa fa-plus-circle" aria-hidden="true"></a></i>
+										</div>
+										<br><br>
+										<ul><br><h3 class="major">3.Coordenadas asociadas al trámite ambiental  </h3></ul>
 										<!--<div class="field half">-->
 											<table class="coords">
 												<thead>
@@ -159,7 +164,13 @@
 														
 														<td class="tg-0lax">Punto  validado:</td>
 														<td class="tg-0lax" colspan="2">
-															<input type="text" name="interesado" id="interesado" placeholder="Punto de captación" disabled/>
+															<select name="" id="">
+															<option value="">Punto de captación</option>
+															<option value="">Punto de vertimiento</option>
+															<option value="">Punto de referencia de aprovechamietnto forestal</option>
+															<option value="">Punto de referencia de ocupación de cauce</option>
+															<option value="">Punto de referencia de licencia ambiental</option>
+														</select>
 														</td>
 												  </tr>
 												  <tr>
@@ -174,8 +185,9 @@
 												  <tr>
 														<td class="tg-0lax">Sistema de referencia:</td>
 														<td class="tg-0lax" colspan="2">
+															<span style="margin:0px -500px 0px 600px;font-size: 25px">&#x270f;&#xfe0f;</span>
 															<select name="tipo-tramite" id="cars">
-																<option value="t1">Origen único</option>
+																<option value="t1">Origen único </option>
 																<option value="t2">WGS 84</option>
 																
 															</select>
@@ -196,13 +208,16 @@
 												</table>
 	
 												<div class="field half">
-													<a href="#">Agregar <i class="fa fa-plus-circle" aria-hidden="true"></a></i>
+													<a style="color:blue" href="#">Agregar <i class="fa fa-plus-circle" aria-hidden="true"></a></i>
 												</div>
 												<div class="field half">
 													
 												</div>
 												
 												<ul><br><br><h3 class="major">4. Obligaciones del usuario a ser verificadas</h3></ul>
+												<div style="margin:-60px 0px 10px 580px; color:blue;">
+													<a href="#">Agregar más <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+												</div>
 												<table class="obligaciones">
 													<thead>
 														<tr>
@@ -254,8 +269,8 @@
 													</tbody>
 													
 												</table>
-												<div class="field half">
-													<a href="#">Agregar <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+												<div style="margin:-40px 0px 10px 700px; color: darkorange;">
+													<a href="#">Agregar Obligación <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
 												</div>
 												<div class="field half">
 												</div>
@@ -274,7 +289,7 @@
 													  </tr>
 													<tbody>
 														<tr>
-															<td class="tg-0lax">Obligación:</td>
+															<td class="tg-0lax">Título Obligación / Aspecto:</td>
 															<td class="tg-0lax" colspan="2"><input type="text" id="desc" name="desc" value="" ></td>
 														  </tr>
 													  <tr>
@@ -302,7 +317,7 @@
 													</tbody>
 													</table>
 													<div class="field half">
-														<a href="#">Agregar <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+														<a style="color:blue" href="#">Agregar <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
 													</div>
 													<div class="field half">
 													</div>
@@ -310,7 +325,7 @@
 													<textarea name="demo-message" id="demo-message" placeholder="Digite el análisis de documentación aportada" rows="6"></textarea>
 													<div class="field half">
 														<ul><br><br><h3 class="major">7. Identificación de afectación y/o problemática ambiental </h3>
-															<p > (Se entenderá por afectación ambiental la alteración o vulnerabilidad al patrimonio ambiental y se entenderá  por problemática, aquellas situaciones que por medio de una afectación ambiental, genera situaciones de tensión (incompatibilidad, discrepancia, demanda, diferencias) entre usuarios, actores o comunidades.  <a style="cursor:pointer;" onclick="myFunction()">Si</a>- No</p> 
+															<p > (este punto solo aplica en los casos en que se presente un incumplimiento reiterado frente a las obligaciones y condiciones del respectivo permiso ambiental, medianteacto administrativo) <a style="cursor:pointer;" onclick="myFunction()">Si</a>- No</p> 
 													
 														</ul>
 														
@@ -321,8 +336,8 @@
 
 													<div id="myDIV2" style="display: none; cursor: pointer;">
 																
-														<p ><a  onclick="myFunction2()">1. Afectación ambiental</a></p>
-														<p><a  onclick="myFunction2()">2. Problemática ambiental</a></p> 
+														<p ><a  onclick="myFunction2()">1. Afectaciona ambiental</a></p>
+														<p>2. Problemática ambiental</p> 
 														
 													</div>
                                                     <div id="myDIV" style="display: none" >
@@ -526,6 +541,7 @@
 
 															</div>
 															<ul><br><br><h4 class="major">8. Conclusiones: </h4></ul>
+															<p>El usuario a cumplido con las siguientes obligaciones:</p>
 															<p>(Incorporar conclusiones relacionadas con el cumplimiento de obligaciones evaluadas en el numeral de obligaciones, asi como de asuntos relevantes identificados tanto en el numeral de análisis de información como en el numeral de situación encontrada, entre otras)</p>
 
 															<table class="ogligaciones2">
@@ -630,18 +646,18 @@
 															<a href="#">Agregar <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
 															<br></br>
 															<br>
-															<br><br><br><br>
-														
+															<br>
+														    <div style="margin:-50px 0px 2px 50px;"><img  width="300px" src="./images//firma.png" alt="" srcset=""></div><p style="margin:-50px 0px 0px 400px;font-size: 25px">&#x1f4e4;</p>
 															<ul><br><br><h4 class="major">NOMBRES Y APELLIDOS EN MAYÚSCULA SOSTENIDA</h4>
 																<p>Perfil profesional <br>
 																	Cargo en mayúscula Inicial
 																	</p>
 																	<p>Duración visita: <input type="text" id=""  name=""  placeholder="Informacion de Sirena" ></p>
-																	<p>Duración Informe: <input type="text" id=""  name=""  placeholder="Informacion de Sirena" > </p>
+																	<p>Duración Informe: <input type="text" id=""  name=""  placeholder="" > </p>
 																	<p>Transporte:  <input type="text" id=""  name=""   ></p>
-																	<p>Asignación: <input type="text" id=""  name=""  placeholder="Informacion de Sirena" > </p>
+																	<p>Asignación: <input type="text" id=""  name=""  placeholder="Particular/corporativo" > </p>
 																	<p>Expediente:  <input type="text" id=""  name=""  placeholder="Informacion de Sirena" ></p>
-																	<p>Elaboró: Nombres y apellidos en mayúscula Inicial, firma <input type="text" id=""  placeholder="Imagen de firma" name="" ></p>
+																	<p>Elaboró: Nombres y apellidos en mayúscula Inicial, firma <p style="margin:-65px 0px 0px 380px;font-size: 25px">&#x1f4e4;</p></p>
 																	<p>Fecha de Elaboración:  <input type="date" id=""  name="" ></p>
 															</ul>
 														
